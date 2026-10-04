@@ -1,0 +1,16 @@
+Instructions for Data Extraction and Code Execution
+
+This document describes the required steps to unpack the dataset and reproduce the empirical results presented in the manuscript.
+
+1. Please download "School sports(central and local)data.zip" and extract it locally on your Windows or macOS machine before running the Python code.
+
+2. Do not extract this archive on a Linux server. The raw text files within this dataset have Chinese filenames, which will become garbled when decompressed in a Linux environment and fail to match the program logic.
+
+3. The code of this study relies on the year characters embedded in filenames for data matching and statistical analysis. Garbled or corrupted filenames will prevent the code from running and reproducing the experimental results.
+
+4. For macOS devices, the system’s default decompression tool is fully compatible with Chinese filenames. No extra software is required and no garbling issue will occur.
+
+5. For Windows devices, do NOT use the built-in right-click decompression function. The default Windows decompression tool corrupts the encoding of Chinese filenames, which may invalidate the year numbers contained in the filenames.
+
+6. Windows users must use 7-Zip software to extract the archive. It can fully preserve the original filenames, year information and file structure, ensuring that the code runs properly and the experimental results are consistent.
+The dataset and code are provided solely for reproducing the results reported in this paper.
